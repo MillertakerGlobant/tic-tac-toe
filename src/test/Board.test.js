@@ -1,8 +1,9 @@
-import { render, screen } from '@testing-library/react';
+import { shallow } from 'enzyme';
 import Board from '../components/Board';
-import React from 'react';
-import renderer from 'react-test-renderer';
 
+describe('<Board />  Component test', () => {
+  test('renders emoty Board component', () => {
+    let wrapper = shallow(<Board />);
+  });
+})
 
-test('renders Board component', () => {
-});
