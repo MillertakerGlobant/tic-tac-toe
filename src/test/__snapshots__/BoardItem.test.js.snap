@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BoardItem />  Component test renders empty BoardItem component 1`] = `
+<div>
+  Game Board Item
+</div>
+`;
