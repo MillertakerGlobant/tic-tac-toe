@@ -10,56 +10,56 @@ exports[`<Board />  Component test renders empty Board component 1`] = `
   >
     <BoardItem
       arrayindex={0}
-      clickHandler={[Function]}
       key="boardItem0"
+      onClick={[Function]}
       value={-1}
     />
     <BoardItem
       arrayindex={1}
-      clickHandler={[Function]}
       key="boardItem1"
+      onClick={[Function]}
       value={-1}
     />
     <BoardItem
       arrayindex={2}
-      clickHandler={[Function]}
       key="boardItem2"
+      onClick={[Function]}
       value={-1}
     />
     <BoardItem
       arrayindex={3}
-      clickHandler={[Function]}
       key="boardItem3"
+      onClick={[Function]}
       value={-1}
     />
     <BoardItem
       arrayindex={4}
-      clickHandler={[Function]}
       key="boardItem4"
+      onClick={[Function]}
       value={-1}
     />
     <BoardItem
       arrayindex={5}
-      clickHandler={[Function]}
       key="boardItem5"
+      onClick={[Function]}
       value={-1}
     />
     <BoardItem
       arrayindex={6}
-      clickHandler={[Function]}
       key="boardItem6"
+      onClick={[Function]}
       value={-1}
     />
     <BoardItem
       arrayindex={7}
-      clickHandler={[Function]}
       key="boardItem7"
+      onClick={[Function]}
       value={-1}
     />
     <BoardItem
       arrayindex={8}
-      clickHandler={[Function]}
       key="boardItem8"
+      onClick={[Function]}
       value={-1}
     />
   </ul>
