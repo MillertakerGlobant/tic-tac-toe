@@ -1,5 +1,98 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<Board />  Component test draw game board 1`] = `
+<div
+  className="gameWrapper"
+>
+  Game Board
+  <ul
+    className="BoardWrapper"
+  >
+    <li
+      arrayindex={0}
+      className="BoardItem"
+      onClick={[Function]}
+      value={0}
+    >
+       
+      x
+    </li>
+    <li
+      arrayindex={1}
+      className="BoardItem"
+      onClick={[Function]}
+      value={1}
+    >
+       
+      o
+    </li>
+    <li
+      arrayindex={2}
+      className="BoardItem"
+      onClick={[Function]}
+      value={0}
+    >
+       
+      x
+    </li>
+    <li
+      arrayindex={3}
+      className="BoardItem"
+      onClick={[Function]}
+      value={1}
+    >
+       
+      o
+    </li>
+    <li
+      arrayindex={4}
+      className="BoardItem"
+      onClick={[Function]}
+      value={0}
+    >
+       
+      x
+    </li>
+    <li
+      arrayindex={5}
+      className="BoardItem"
+      onClick={[Function]}
+      value={1}
+    >
+       
+      o
+    </li>
+    <li
+      arrayindex={6}
+      className="BoardItem"
+      onClick={[Function]}
+      value={0}
+    >
+       
+      x
+    </li>
+    <li
+      arrayindex={7}
+      className="BoardItem"
+      onClick={[Function]}
+      value={1}
+    >
+       
+      o
+    </li>
+    <li
+      arrayindex={8}
+      className="BoardItem"
+      onClick={[Function]}
+      value={0}
+    >
+       
+      x
+    </li>
+  </ul>
+</div>
+`;
+
 exports[`<Board />  Component test renders empty Board component 1`] = `
 <div
   className="gameWrapper"
