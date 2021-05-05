@@ -65,7 +65,7 @@ exports[`<Board />  Component test renders empty Board component 1`] = `
   </ul>
   <p>
     Player 
-    x
+    X
      plays
   </p>
   <a

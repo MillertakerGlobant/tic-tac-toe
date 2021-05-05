@@ -60,7 +60,7 @@ describe('<Board />  Component test', () => {
     wrapper.find('ul').children().at(6).simulate('click');  
     
     const gameOverText = wrapper.find('h3').text().trim();
-    expect(gameOverText).toBe('x player is the winner');
+    expect(gameOverText).toBe('X player is the winner');
   });
 
   test('Player 2 winner', () => {
@@ -73,7 +73,7 @@ describe('<Board />  Component test', () => {
     wrapper.find('ul').children().at(7).simulate('click');  
     
     const gameOverText = wrapper.find('h3').text().trim();
-    expect(gameOverText).toBe('o player is the winner');
+    expect(gameOverText).toBe('O player is the winner');
   });
 
   test('reset Board click', () => {
