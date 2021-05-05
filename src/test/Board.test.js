@@ -89,5 +89,15 @@ describe('<Board />  Component test', () => {
       expect(boardItemValue).toBe(-1);
     }
   });
+
+  test('rewind Board ', () => {
+    wrapper = mount(<Board />);
+    wrapper.find('ul').children().at(0).simulate('click');
+    wrapper.find('ul').children().at(1).simulate('click');
+    wrapper.find('ul').children().at(2).simulate('click');
+    wrapper.find('.rewindBtn').simulate('click'); 
+  
+    expect(wrapper.find('ul').children().at(2).simulate('click')).toBe(-1);
+  });
 })
 
