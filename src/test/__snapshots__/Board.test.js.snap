@@ -9,40 +9,58 @@ exports[`<Board />  Component test renders empty Board component 1`] = `
     className="BoardWrapper"
   >
     <BoardItem
-      index={0}
-      onClick={[Function]}
+      arrayindex={0}
+      clickHandler={[Function]}
+      key="boardItem0"
+      value={-1}
     />
     <BoardItem
-      index={1}
-      onClick={[Function]}
+      arrayindex={1}
+      clickHandler={[Function]}
+      key="boardItem1"
+      value={-1}
     />
     <BoardItem
-      index={2}
-      onClick={[Function]}
+      arrayindex={2}
+      clickHandler={[Function]}
+      key="boardItem2"
+      value={-1}
     />
     <BoardItem
-      index={3}
-      onClick={[Function]}
+      arrayindex={3}
+      clickHandler={[Function]}
+      key="boardItem3"
+      value={-1}
     />
     <BoardItem
-      index={4}
-      onClick={[Function]}
+      arrayindex={4}
+      clickHandler={[Function]}
+      key="boardItem4"
+      value={-1}
     />
     <BoardItem
-      index={5}
-      onClick={[Function]}
+      arrayindex={5}
+      clickHandler={[Function]}
+      key="boardItem5"
+      value={-1}
     />
     <BoardItem
-      index={6}
-      onClick={[Function]}
+      arrayindex={6}
+      clickHandler={[Function]}
+      key="boardItem6"
+      value={-1}
     />
     <BoardItem
-      index={7}
-      onClick={[Function]}
+      arrayindex={7}
+      clickHandler={[Function]}
+      key="boardItem7"
+      value={-1}
     />
     <BoardItem
-      index={8}
-      onClick={[Function]}
+      arrayindex={8}
+      clickHandler={[Function]}
+      key="boardItem8"
+      value={-1}
     />
   </ul>
 </div>
