@@ -30,3 +30,9 @@ test('user O win by row 2,5,8', () => {
   expect(calculateGame(board)).toBe(0);
 });
 
+test('drawn game', () => {
+  var board = [0,1,0,1,0,1,1,0,1]
+  
+  expect(calculateGame(board)).toBe(null);
+});
+
