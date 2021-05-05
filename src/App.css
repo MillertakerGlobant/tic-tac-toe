@@ -2,9 +2,21 @@ body {
   background-color: #282c34;
 }
 
+/** reset  **/
+
+ul, li {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
 .App {
   text-align: center;
   color: white;
+}
+
+.App h1 {
+  color: #61dafb;
 }
 
 .App-logo {
@@ -20,6 +32,13 @@ body {
 
 .App-link {
   color: #61dafb;
+}
+
+.BoardItem {
+  width: 48px;
+  height: 48px;
+  font-weight: 700;
+  font-size: 48px;
 }
 
 @keyframes App-logo-spin {

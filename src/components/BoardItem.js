@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 
-const BoardItem = () => {
+const BoardItem = (props) => {
   return (
-    <div>
-      Game Board Item 
-    </div>
+    <li className="BoardItem">
+      X O
+    </li>
   )
 }
 
