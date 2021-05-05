@@ -29,6 +29,12 @@ const Board = () => {
     }
   }
 
+  function resetGame(e) {
+    e.preventDefault();
+    setBoard([-1,-1,-1,-1,-1,-1,-1,-1,-1]);
+    setTurn(0);
+  }
+
   const boardItems = board.map((e, i) => <BoardItem key={`boardItem${i}`} arrayindex={i} value={e} onClick={clickItem} ></BoardItem> )
   
   return (
@@ -38,6 +44,8 @@ const Board = () => {
       <ul className="BoardWrapper">
         { boardItems }
       </ul>
+
+      <a className="resetBtn" onClick={resetGame} href="">Reset Game</a>
 
       {gameOver[0] &&  <div> <img className="gameOver" src={sadBoy} alt=""/> <h3>GAME OVER</h3> </div>  }
       {winner !== null && <div> <img className="gameOver" src={winnerBoy} alt=""/> <h3> { player[winner] } player is the winner</h3> </div>  }

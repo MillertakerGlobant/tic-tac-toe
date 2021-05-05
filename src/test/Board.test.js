@@ -47,8 +47,6 @@ describe('<Board />  Component test', () => {
     wrapper.find('ul').children().at(5).simulate('click');  
     wrapper.find('ul').children().at(3).simulate('click');  
 
-    //console.log(wrapper.debug());
-
     const gameOverText = wrapper.find('h3').text().trim();
     expect(gameOverText).toBe('GAME OVER');
   });
@@ -78,13 +76,13 @@ describe('<Board />  Component test', () => {
     expect(gameOverText).toBe('o player is the winner');
   });
 
-  test('reset board click', () => {
+  test('reset Board click', () => {
     wrapper = mount(<Board />);
     wrapper.find('ul').children().at(0).simulate('click');
     wrapper.find('ul').children().at(1).simulate('click');
     wrapper.find('ul').children().at(2).simulate('click');
     wrapper.find('ul').children().at(4).simulate('click');
-    wrapper.find('a').children().at(7).simulate('click'); 
+    wrapper.find('.resetBtn').simulate('click'); 
   
     for(let i = 0; i < 9; i++) {
       let boardItemValue = wrapper.find('ul').children().at(i).prop('value');
