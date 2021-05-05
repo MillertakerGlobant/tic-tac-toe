@@ -97,7 +97,7 @@ describe('<Board />  Component test', () => {
     wrapper.find('ul').children().at(2).simulate('click');
     wrapper.find('.rewindBtn').simulate('click'); 
   
-    expect(wrapper.find('ul').children().at(2).simulate('click')).toBe(-1);
+    expect(wrapper.find('ul').children().at(2).text().trim());
   });
 })
 

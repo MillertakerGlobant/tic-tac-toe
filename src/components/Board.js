@@ -10,6 +10,7 @@ const Board = () => {
   const [gameOver, setGameOver] = useState([false, null]);
   const [winner, setWinner] = useState(null);
   const player = ['x','o'];
+  const [prevBoard, setPrevBoard] = useState([]);
 
   useEffect(() => {
   })
@@ -18,10 +19,10 @@ const Board = () => {
     if(!gameOver[0] && winner === null) {
       var index = e.target.getAttribute('arrayindex');
       var currentBoard = JSON.parse(JSON.stringify(board));
+      setPrevBoard(JSON.parse(JSON.stringify(board)));
 
       turn === 8 && setGameOver([true, null])
       currentBoard[index] = turn % 2;
-
       
       setTurn(turn + 1);
       setBoard(currentBoard); 
@@ -33,6 +34,15 @@ const Board = () => {
     e.preventDefault();
     setBoard([-1,-1,-1,-1,-1,-1,-1,-1,-1]);
     setTurn(0);
+    setWinner(null);
+  }
+
+  function rewindGame(e) {
+    e.preventDefault();
+
+    setBoard(prevBoard);
+    setPrevBoard([]);
+    setTurn(turn - 1);
   }
 
   const boardItems = board.map((e, i) => <BoardItem key={`boardItem${i}`} arrayindex={i} value={e} onClick={clickItem} ></BoardItem> )
@@ -46,6 +56,7 @@ const Board = () => {
       </ul>
 
       <a className="resetBtn" onClick={resetGame} href="">Reset Game</a>
+      { prevBoard.length > 0 &&  <a className="rewindBtn" onClick={rewindGame} href="">Rewind Move</a> }
 
       {gameOver[0] &&  <div> <img className="gameOver" src={sadBoy} alt=""/> <h3>GAME OVER</h3> </div>  }
       {winner !== null && <div> <img className="gameOver" src={winnerBoy} alt=""/> <h3> { player[winner] } player is the winner</h3> </div>  }

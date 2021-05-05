@@ -42,7 +42,7 @@ ul, li {
   height: 228px;
 }
 
-.resetBtn {
+.resetBtn, .rewindBtn {
   color: #282c34;
   background: white;
   padding: 10px 15px;
@@ -50,6 +50,7 @@ ul, li {
   text-decoration: none;
   display: inline-block;
   margin-bottom: 30px;
+  margin-right: 10px;
 }
 
 .gameOver {
