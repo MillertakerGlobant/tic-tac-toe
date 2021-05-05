@@ -41,3 +41,7 @@ ul, li {
   width: 228px;
   height: 228px;
 }
+
+.gameOver {
+  width: 120px;
+}

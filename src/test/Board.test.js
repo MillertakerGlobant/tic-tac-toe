@@ -39,7 +39,20 @@ describe('<Board />  Component test', () => {
     wrapper = mount(<Board />);
     for(let i = 0; i < 9; i++) wrapper.find('ul').children().at(i).simulate('click');
 
-    expect(wrapper).toMatchSnapshot();
+    const gameOverText = wrapper.find('h3').text().trim();
+    expect(gameOverText).toBe('GAME OVER');
+  });
+
+  test('Player 1 winner', () => {
+    wrapper = mount(<Board />);
+    wrapper.find('ul').children().at(0).simulate('click');
+    wrapper.find('ul').children().at(2).simulate('click');
+    wrapper.find('ul').children().at(3).simulate('click');
+    wrapper.find('ul').children().at(4).simulate('click');
+    wrapper.find('ul').children().at(6).simulate('click');  
+    
+    const gameOverText = wrapper.find('h3').text().trim();
+    expect(gameOverText).toBe('x player is the winner');
   });
 })
 
