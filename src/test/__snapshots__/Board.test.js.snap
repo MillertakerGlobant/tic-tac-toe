@@ -8,15 +8,42 @@ exports[`<Board />  Component test renders empty Board component 1`] = `
   <ul
     className="BoardWrapper"
   >
-    <BoardItem />
-    <BoardItem />
-    <BoardItem />
-    <BoardItem />
-    <BoardItem />
-    <BoardItem />
-    <BoardItem />
-    <BoardItem />
-    <BoardItem />
+    <BoardItem
+      index={0}
+      onClick={[Function]}
+    />
+    <BoardItem
+      index={1}
+      onClick={[Function]}
+    />
+    <BoardItem
+      index={2}
+      onClick={[Function]}
+    />
+    <BoardItem
+      index={3}
+      onClick={[Function]}
+    />
+    <BoardItem
+      index={4}
+      onClick={[Function]}
+    />
+    <BoardItem
+      index={5}
+      onClick={[Function]}
+    />
+    <BoardItem
+      index={6}
+      onClick={[Function]}
+    />
+    <BoardItem
+      index={7}
+      onClick={[Function]}
+    />
+    <BoardItem
+      index={8}
+      onClick={[Function]}
+    />
   </ul>
 </div>
 `;
