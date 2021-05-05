@@ -33,6 +33,7 @@ ul, li {
   margin-right: 6px;
   margin-bottom: 2px;
   cursor: pointer;
+  overflow: hidden;
 }
 
 .BoardWrapper {

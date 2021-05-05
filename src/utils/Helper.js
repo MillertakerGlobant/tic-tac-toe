@@ -19,6 +19,7 @@ const calculateGame = (board) => {
   return null;
 }
 
+
 export {
   calculateGame
 }
