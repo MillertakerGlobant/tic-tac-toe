@@ -70,5 +70,10 @@ exports[`<Board />  Component test renders empty Board component 1`] = `
   >
     Reset Game
   </a>
+  <p>
+    Player 
+    x
+     plays
+  </p>
 </div>
 `;
