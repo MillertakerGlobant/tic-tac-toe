@@ -1,7 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Board />  Component test renders empty Board component 1`] = `
-<div>
+<div
+  className="gameWrapper"
+>
   Game Board
+  <ul
+    className="BoardWrapper"
+  >
+    <BoardItem />
+    <BoardItem />
+    <BoardItem />
+    <BoardItem />
+    <BoardItem />
+    <BoardItem />
+    <BoardItem />
+    <BoardItem />
+    <BoardItem />
+  </ul>
 </div>
 `;

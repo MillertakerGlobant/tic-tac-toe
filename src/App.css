@@ -34,11 +34,26 @@ ul, li {
   color: #61dafb;
 }
 
+.gameWrapper {
+  text-align: center;
+}
+
 .BoardItem {
-  width: 48px;
-  height: 48px;
+  width: 70px;
+  height: 70px;
   font-weight: 700;
   font-size: 48px;
+  display: inline-block;
+  background: #454955;
+  margin-right: 6px;
+  margin-bottom: 2px;
+  cursor: pointer;
+}
+
+.BoardWrapper {
+  margin: 40px auto;
+  width: 228px;
+  height: 228px;
 }
 
 @keyframes App-logo-spin {
