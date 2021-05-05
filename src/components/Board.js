@@ -4,21 +4,21 @@ import BoardItem from './BoardItem';
 const Board = () => {
   const [board, setBoard] = useState([-1,-1,-1,-1,-1,-1,-1,-1,-1]);
 
-  useEffect(() => {
-    console.log('changed');
-  })
-
-  const clickItem = (e) => {
+  function clickItem(e) {
     e.preventDefault();
-    console.log('clicked');
+    var value = e.target.getAttribute('value');
+    var index = e.target.getAttribute('arrayindex');
+    console.log('clicked', value, index );
   }
 
+  const boardItems = board.map((e, i) => <BoardItem key={`boardItem${i}`} arrayindex={i} value={e} clickHandler={clickItem} ></BoardItem> )
+  
   return (
     <div className="gameWrapper">
       Game Board 
 
       <ul className="BoardWrapper">
-        { board.map( (e,i) => <BoardItem key={`boardItem${i}`} index={i} value={e} onClick={clickItem} /> ) }
+        { boardItems }
       </ul>
     </div>
   )
