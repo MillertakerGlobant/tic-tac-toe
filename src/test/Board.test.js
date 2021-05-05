@@ -64,5 +64,18 @@ describe('<Board />  Component test', () => {
     const gameOverText = wrapper.find('h3').text().trim();
     expect(gameOverText).toBe('x player is the winner');
   });
+
+  test('Player 2 winner', () => {
+    wrapper = mount(<Board />);
+    wrapper.find('ul').children().at(0).simulate('click');
+    wrapper.find('ul').children().at(1).simulate('click');
+    wrapper.find('ul').children().at(2).simulate('click');
+    wrapper.find('ul').children().at(4).simulate('click');
+    wrapper.find('ul').children().at(5).simulate('click');  
+    wrapper.find('ul').children().at(7).simulate('click');  
+    
+    const gameOverText = wrapper.find('h3').text().trim();
+    expect(gameOverText).toBe('o player is the winner');
+  });
 })
 
