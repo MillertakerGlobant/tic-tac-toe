@@ -56,8 +56,9 @@ const Board = () => {
         { boardItems }
       </ul>
 
-      <a className="resetBtn" onClick={resetGame} href="">Reset Game</a>
       { winner === null && <p>Player {player[turn % 2]} plays</p>  }
+
+      <a className="resetBtn" onClick={resetGame} href="">Reset Game</a>
       { prevBoard.length > 0 &&  <a className="rewindBtn" onClick={rewindGame} href="">Rewind Move</a> }
 
       {gameOver[0] && winner === null && <div> <img className="gameOver" src={sadBoy} alt=""/> <h3>GAME OVER</h3> </div>  }
