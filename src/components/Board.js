@@ -9,20 +9,24 @@ const Board = () => {
   const [turn, setTurn] = useState(0);
   const [gameOver, setGameOver] = useState([false, null]);
   const [winner, setWinner] = useState(null);
+  const player = ['x','o'];
 
   useEffect(() => {
   })
 
   function clickItem(e) {
-    var index = e.target.getAttribute('arrayindex');
-    var currentBoard = JSON.parse(JSON.stringify(board));
+    if(!gameOver[0] && winner === null) {
+      var index = e.target.getAttribute('arrayindex');
+      var currentBoard = JSON.parse(JSON.stringify(board));
 
-    turn === 8 && setGameOver([true, null])
-    currentBoard[index] = turn % 2;
+      turn === 8 && setGameOver([true, null])
+      currentBoard[index] = turn % 2;
 
-    
-    setTurn(turn + 1);
-    setBoard(currentBoard); 
+      
+      setTurn(turn + 1);
+      setBoard(currentBoard); 
+      setWinner(calculateGame(currentBoard))
+    }
   }
 
   const boardItems = board.map((e, i) => <BoardItem key={`boardItem${i}`} arrayindex={i} value={e} onClick={clickItem} ></BoardItem> )
@@ -36,7 +40,7 @@ const Board = () => {
       </ul>
 
       {gameOver[0] &&  <div> <img className="gameOver" src={sadBoy} alt=""/> <h3>GAME OVER</h3> </div>  }
-      {winner !== null && <div> <img className="gameOver" src={winnerBoy} alt=""/> <h3> { winner } player is the winner</h3> </div>  }
+      {winner !== null && <div> <img className="gameOver" src={winnerBoy} alt=""/> <h3> { player[winner] } player is the winner</h3> </div>  }
     </div>
   )
 }

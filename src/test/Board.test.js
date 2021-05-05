@@ -37,7 +37,17 @@ describe('<Board />  Component test', () => {
 
   test('draw game board', () => {
     wrapper = mount(<Board />);
-    for(let i = 0; i < 9; i++) wrapper.find('ul').children().at(i).simulate('click');
+    wrapper.find('ul').children().at(0).simulate('click');
+    wrapper.find('ul').children().at(1).simulate('click');
+    wrapper.find('ul').children().at(2).simulate('click');
+    wrapper.find('ul').children().at(4).simulate('click');
+    wrapper.find('ul').children().at(7).simulate('click');  
+    wrapper.find('ul').children().at(6).simulate('click');  
+    wrapper.find('ul').children().at(8).simulate('click');  
+    wrapper.find('ul').children().at(5).simulate('click');  
+    wrapper.find('ul').children().at(3).simulate('click');  
+
+    console.log(wrapper.debug());
 
     const gameOverText = wrapper.find('h3').text().trim();
     expect(gameOverText).toBe('GAME OVER');
