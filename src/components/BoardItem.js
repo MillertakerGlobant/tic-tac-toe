@@ -1,11 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const BoardItem = (props) => {
-  return (
-    <li className="BoardItem">
-      X O
-    </li>
-  )
-}
+const BoardItem = (props) => 
+  <li className="BoardItem"> {props.value ? "o" : "x" }</li>
 
 export default BoardItem;

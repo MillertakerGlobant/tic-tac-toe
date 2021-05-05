@@ -10,5 +10,13 @@ describe('<BoardItem />  Component test', () => {
   test('renders empty BoardItem component', () => {
     expect(wrapper).toMatchSnapshot();
   });
+
+  test('renders X when the value is 1', () => {
+
+  });
+
+  test('renders O when the value is 0', () => {
+    
+  });
 })
 
