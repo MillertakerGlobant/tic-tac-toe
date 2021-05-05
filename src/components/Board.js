@@ -11,7 +11,7 @@ const Board = () => {
     console.log('clicked', value, index );
   }
 
-  const boardItems = board.map((e, i) => <BoardItem key={`boardItem${i}`} arrayindex={i} value={e} clickHandler={clickItem} ></BoardItem> )
+  const boardItems = board.map((e, i) => <BoardItem key={`boardItem${i}`} arrayindex={i} value={e} onClick={clickItem} ></BoardItem> )
   
   return (
     <div className="gameWrapper">
