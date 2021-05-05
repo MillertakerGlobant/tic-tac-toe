@@ -9,7 +9,7 @@ const Board = () => {
   const [turn, setTurn] = useState(0);
   const [gameOver, setGameOver] = useState([false, null]);
   const [winner, setWinner] = useState(null);
-  const player = ['x','o'];
+  const player = ['X','O'];
   const [prevBoard, setPrevBoard] = useState([]);
 
   function clickItem(e) {
